@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; position: relative; bottom: -3rem;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="flex justify-content-center align-items-center column">
+
+  <div class="balance-container flex justify-content-space align-items-center">
+    <div class="myBalance flex align-items-center column">
+      <p>My Balance</p>
+      <div class="dollar flex">$ <div class="balance"> ----</div></div>
+    </div>
+    <img src="images\logo.svg" class="logo">
+  </div>
+
+  <div class="chart-container flex column justify-content-space">
+    <h1>Spending - Last 7 days</h1>
+    <div id="chart" class="flex justify-content-space">
+
+      <div class="bar-column bar-column-1 flex column align-items-center">
+        <div class="amount amount-1 flex justify-content-center align-items-center"></div>
+        <div class="bar bar-1"></div>
+        <div class="day day-1">mon</div>
+      </div>
+
+      <div class="bar-column bar-column-2 flex column align-items-center">
+        <div class="amount amount-2 flex justify-content-center align-items-center"></div>
+        <div class="bar bar-2"></div>
+        <div class="day day-2">tue</div>
+      </div>
+
+      <div class="bar-column bar-column-3 flex column align-items-center">
+        <div class="amount amount-3 flex justify-content-center align-items-center"></div>
+        <div class="bar bar-3"></div>
+        <div class="day day-3">wed</div>
+      </div>
+
+      <div class="bar-column bar-column-4 flex column align-items-center">
+        <div class="amount amount-4 flex justify-content-center align-items-center"></div>
+        <div class="bar bar-4"></div>
+        <div class="day day-4">thu</div>
+      </div>
+
+      <div class="bar-column bar-column-5 flex column align-items-center">
+        <div class="amount amount-5 flex justify-content-center align-items-center"></div>
+        <div class="bar bar-5"></div>
+        <div class="day day-5">fri</div>
+      </div>
+
+      <div class="bar-column bar-column-6 flex column align-items-center">
+        <div class="amount amount-6 flex justify-content-center align-items-center"></div>
+        <div class="bar bar-6"></div>
+        <div class="day day-6">sat</div>
+      </div>
+
+      <div class="bar-column bar-column-7 flex column align-items-center">
+        <div class="amount amount-7 flex justify-content-center align-items-center"></div>
+        <div class="bar bar-7"></div>
+        <div class="day day-7">sun</div>
+      </div>
+
+    </div>
+    <hr>
+
+    <div class="spending flex justify-content-space align-items-center">
+      <div class="total-spending">
+        <p class="total-this-month">Total this month</p>
+        <div class="dollar-spend flex">$<div class="spending-amount">----</div></div>
+      </div>
+      <div class="percentage-from-last-month flex column">
+        <p class="percentage">+2.4%</p>
+        <p class="last-month">from last month</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ALtera21">notAltera</a>.
+  </div>
+
+</body>
+</html>
